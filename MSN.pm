@@ -4,7 +4,7 @@
 # Modified by:
 #  David Radunz - http://www.boxen.net/
 #
-# $Id: MSN.pm,v 1.21 2003/10/18 03:10:45 david Exp $ 
+# $Id: MSN.pm,v 1.22 2003/10/29 22:21:48 david Exp $ 
 
 package Net::MSN;
 
@@ -31,7 +31,7 @@ BEGIN {
 
   use vars qw($VERSION);
 
-  $VERSION = do { my @r=(q$Revision: 1.21 $=~/\d+/g); sprintf "%d."."%03d"x$#r,@r }; 
+  $VERSION = do { my @r=(q$Revision: 1.22 $=~/\d+/g); sprintf "%d."."%03d"x$#r,@r }; 
 
   use vars qw(%errlist %statuscodes %PendingMsgs);
 
@@ -733,6 +733,5 @@ sub stripheader {
 
   return $msg;
 }
-
 
 return 1;

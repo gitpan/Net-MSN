@@ -4,5 +4,8 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'		=> 'Net::MSN::Debug',
     'VERSION_FROM'	=> 'Debug.pm', # finds $VERSION
-    'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
+    'PREREQ_PM'		=> {
+	Fcntl => 1.04,
+	POSIX => 1.05
+    }, # e.g., Module::Name => 1.1
 );

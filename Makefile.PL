@@ -4,5 +4,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'		=> 'Net::MSN',
     'VERSION_FROM'	=> 'MSN.pm', # finds $VERSION
-    'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
+    'PREREQ_PM'		=> {
+	Digest::MD5 => 2.30
+    }, # e.g., Module::Name => 1.1
 );

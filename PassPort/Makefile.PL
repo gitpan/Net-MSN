@@ -4,5 +4,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'		=> 'Net::MSN::PassPort',
     'VERSION_FROM'	=> 'PassPort.pm', # finds $VERSION
-    'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
+    'PREREQ_PM'		=> {
+	LWP::UserAgent => 2.013
+    }, # e.g., Module::Name => 1.1
 );

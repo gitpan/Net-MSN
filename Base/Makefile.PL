@@ -4,5 +4,9 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'		=> 'Net::MSN::Base',
     'VERSION_FROM'	=> 'Base.pm', # finds $VERSION
-    'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
+    'PREREQ_PM'		=> {
+	Hash::Merge => 0.07,
+	IO::Socket => 1.27,
+	IO::Select => 1.15
+    }, # e.g., Module::Name => 1.1
 );
